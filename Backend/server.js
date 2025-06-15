@@ -4,14 +4,14 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // PostgreSQL connection
 const pool = new Pool({
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
+    user: postgres,
+    host: postgres,
     database: process.env.DB_NAME,
-    password: process.env.DB_PASSWORD,
+    password: admin1234,
     port: process.env.DB_PORT || 5432
 });
 

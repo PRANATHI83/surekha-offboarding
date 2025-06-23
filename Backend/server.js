@@ -4,14 +4,14 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3009;
+const port = process.env.PORT || 3031;
 
 // PostgreSQL connection
 const pool = new Pool({
     user: 'postgres',
     host: 'postgres',
     database: process.env.DB_NAME,
-    password: 'admin1023',
+    password: 'admin234',
     port: process.env.DB_PORT || 5432
 });
 
@@ -184,5 +184,5 @@ app.use(errorHandler);
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running on http://3.110.46.129:${port}`);
+    console.log(`Server running on http://13.201.36.187:${port}`);
 });
